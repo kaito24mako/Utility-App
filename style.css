@@ -18,7 +18,7 @@ body {
 }
 
 /* Header */
-header {
+.title {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,9 +41,27 @@ header {
 .switch img {
     width: 40px;
 }
-.buttons-cont {
+.buttons-container {
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.tabs {
+   display: flex;
+   flex-direction: row;
+   gap: 10px;
+}
+.tool {
+    border: 1px solid black;
+    width: 600px;
+    height: 400px;
 }
 
