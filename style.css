@@ -59,7 +59,7 @@ body {
    flex-direction: row;
    gap: 10px;
 }
-.tool {
+.tab-content {
     border: 1px solid black;
     width: 600px;
     height: 400px;

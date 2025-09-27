@@ -13,3 +13,5 @@ darkButton.addEventListener("click", () => {
     document.body.style.color = "white";
 })
 
+// Counter tool 
+
