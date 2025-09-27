@@ -15,3 +15,13 @@ darkButton.addEventListener("click", () => {
 
 // Counter tool 
 
+const increaseButton = document.querySelector("#increaseBtn");
+const decreaseButton = document.querySelector("#decreaseBtn");
+const resetButton = document.querySelector("#resetBtn");
+const numberInput = document.querySelector("#inputBox");
+
+increaseButton.addEventListener("click", () => {
+    let currentValue = Number(numberInput.value);
+    numberInput.value = currentValue + 1;
+    console.log(numberInput.value);
+});
