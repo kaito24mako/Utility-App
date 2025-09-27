@@ -35,3 +35,7 @@ decreaseButton.addEventListener("click", () => {
     numberOutput.textContent = `${numberInput.value}`;
 });
 
+resetButton.addEventListener("click", () => {
+    numberInput.value = 0;
+    numberOutput.textContent = `${numberInput.value}`;
+});
