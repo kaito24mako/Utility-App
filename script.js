@@ -19,9 +19,19 @@ const increaseButton = document.querySelector("#increaseBtn");
 const decreaseButton = document.querySelector("#decreaseBtn");
 const resetButton = document.querySelector("#resetBtn");
 const numberInput = document.querySelector("#inputBox");
+const numberOutput = document.querySelector("#result");
 
 increaseButton.addEventListener("click", () => {
     let currentValue = Number(numberInput.value);
     numberInput.value = currentValue + 1;
     console.log(numberInput.value);
+    numberOutput.textContent = `${numberInput.value}`;
 });
+
+decreaseButton.addEventListener("click", () => {
+    let currentValue = Number(numberInput.value);
+    numberInput.value = currentValue - 1;
+    console.log(numberInput.value);
+    numberOutput.textContent = `${numberInput.value}`;
+});
+
