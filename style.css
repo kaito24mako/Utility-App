@@ -5,7 +5,7 @@ html {
 * {
     margin: 0;
     padding: 0;
-    /* border: 1px solid rgba(0, 0, 0, 0.212); */
+   /* border: 1px solid rgba(0, 0, 0, 0.212); */
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -61,8 +61,8 @@ body {
 }
 .tab-content {
     border: 1px solid black;
-    width: 600px;
-    height: 400px;
+    width: 550px;
+    height: 300px;
 }
 
 /* Footer */
@@ -72,4 +72,18 @@ body {
     align-items: center;
     padding-top: 20px;
     gap: 5px;
+}
+
+/* Counter tab content */ 
+.counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    gap: 10px;
+}
+
+#result {
+    font-size: 20px;
+    margin-top: 30px;
 }
