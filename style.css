@@ -12,10 +12,38 @@ html {
     text-decoration: none;
 }
 
-/* Header */
+/* General */
+body {
+    padding: 20px;
+}
 
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+#main-text {
+    font-size: 30px;
+}
+#sub-text {
+    font-size: 20px;
+}
 
 /* Switch */
+.switch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
 .switch img {
     width: 40px;
 }
+.buttons-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
