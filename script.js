@@ -72,3 +72,12 @@ resetButton.addEventListener("click", () => {
 
 // Quote Generator - Tab Content 
 
+const quoteList = [
+    "For those to whom much is given, much is required - the Bible",
+    "Speak softly and carry a big stick -= T. Roosevelt",
+    "The truth will set you free - the Bible",
+    "Whatever you are, be a good one - A. Lincoln",
+    "Do what you can, with what you have, where you are - T. Roosevelt"
+]
+
+
