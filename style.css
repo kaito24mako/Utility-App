@@ -119,7 +119,7 @@ body {
 }
 
 /* Tabs */
-.counter, .calculator {
+.counter, .calculator, .quote-generator {
     display: none;  /* hidden by default */
 }
 .active-tab {
