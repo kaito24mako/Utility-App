@@ -110,3 +110,18 @@ const letterButton = document.querySelector("#letterBtn");
 textInput.addEventListener("keyup", () => {
     textOutput.textContent = textInput.value;
 })
+
+reverseButton.addEventListener("click", () => {
+    let string = textOutput.textContent;
+    return textOutput.textContent = string.split("").reverse().join("");
+})
+
+uppercaseButton.addEventListener("click", () => {
+    let string = textInput.value;
+    return textOutput.textContent = string.toUpperCase();
+})
+
+letterButton.addEventListener("click", () => {
+    let string = textInput.value;
+    return textOutput.textContent = string.replace(/\s+/g, "").length;
+})
