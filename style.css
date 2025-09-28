@@ -75,7 +75,7 @@ body {
     gap: 5px;
 }
 
-/* Counter - Tab Content */ 
+/* Counter */ 
 .counter {
     display: flex;
     flex-direction: column;
@@ -84,12 +84,12 @@ body {
     gap: 10px;
 }
 
-#result {
+#counterResult {
     font-size: 20px;
     margin-top: 30px;
 }
 
-/* Calculator - Tab Content */
+/* Calculator */
 .calculator {
     display: flex;
     flex-direction: column;
@@ -109,7 +109,7 @@ body {
     text-align: center;
 }
 
-/* Quote Generator - Tab Content */
+/* Quote Generator */
 .quote-generator {
     display: flex;
     flex-direction: column;
@@ -118,13 +118,17 @@ body {
     gap: 20px;
 }
 
-/* Word Tool - Tab Content */
+/* Word Tool */
 .word-tool {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
     gap: 10px;
+}
+#wordResult {
+    font-size: 20px;
+    margin-top: 30px;
 }
 
 /* Tabs */

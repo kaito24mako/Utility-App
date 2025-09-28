@@ -42,13 +42,13 @@ darkButton.addEventListener("click", () => {
     document.body.style.color = "white";
 })
 
-// Counter - Tab Content
+// Counter
 
 const increaseButton = document.querySelector("#increaseBtn");
 const decreaseButton = document.querySelector("#decreaseBtn");
 const resetButton = document.querySelector("#resetBtn");
 const numberInput = document.querySelector("#inputBox");
-const numberOutput = document.querySelector("#result");
+const numberOutput = document.querySelector("#counterResult");
 
 let action = "";
 
@@ -76,7 +76,7 @@ resetButton.addEventListener("click", () => {
     counterTool("reset");
 });
 
-// Quote Generator - Tab Content 
+// Quote Generator 
 
 const quoteButton = document.querySelector("#getQuote");
 const outputQuote = document.querySelector("#outputQuote");
@@ -98,3 +98,15 @@ quoteButton.addEventListener("click", () => {
         outputQuote.textContent = "No more quotes left. Sorry!"
     }
 });
+
+// Word Tool
+
+const textInput = document.querySelector("#textBox");
+const textOutput = document.querySelector("#wordResult");
+const reverseButton = document.querySelector("#reverseBtn");
+const uppercaseButton = document.querySelector("#uppercaseBtn");
+const letterButton = document.querySelector("#letterBtn");
+
+textInput.addEventListener("keyup", () => {
+    textOutput.textContent = textInput.value;
+})
