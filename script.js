@@ -1,3 +1,27 @@
+// Tabs
+const counterTab = document.querySelector("#counterTab");
+const calculatorTab = document.querySelector("#calculatorTab");
+
+const counterContent = document.querySelector(".counter");
+const calculatorContent = document.querySelector(".calculator");
+
+function showTab(content) {
+    // hide everything
+    counterContent.classList.remove("active-tab");
+    calculatorContent.classList.remove("active-tab");
+
+    // show the tab content we want
+    content.classList.add("active-tab");
+}
+
+counterTab.addEventListener("click", () => {
+    showTab(counterContent);
+})
+calculatorTab.addEventListener("click", () => {
+    showTab(calculatorContent);
+})
+
+
 // Light switch
 
 const lightButton = document.querySelector("#light");

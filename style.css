@@ -54,7 +54,7 @@ body {
     align-items: center;
     gap: 5px;
 }
-.tabs {
+.tab {
    display: flex;
    flex-direction: row;
    gap: 10px;
@@ -87,4 +87,12 @@ body {
 #result {
     font-size: 20px;
     margin-top: 30px;
+}
+
+/* Tabs */
+.counter, .calculator {
+    display: none;  /* hidden by default */
+}
+.active-tab {
+    display: flex;  /* only the active tab shows */
 }
