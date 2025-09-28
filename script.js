@@ -74,10 +74,15 @@ resetButton.addEventListener("click", () => {
 
 const quoteList = [
     "For those to whom much is given, much is required - the Bible",
-    "Speak softly and carry a big stick -= T. Roosevelt",
+    "Speak softly and carry a big stick - T. Roosevelt",
     "The truth will set you free - the Bible",
     "Whatever you are, be a good one - A. Lincoln",
     "Do what you can, with what you have, where you are - T. Roosevelt"
 ]
 
+const quoteButton = document.querySelector("#getQuote");
+const outputQuote = document.querySelector("#outputQuote");
 
+quoteButton.addEventListener("click", () => {
+    outputQuote.textContent = quoteList;
+})
