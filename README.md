@@ -3,6 +3,9 @@
 This is a personal project to hone my JavaScript skills. 
 <br>It involves functions, arrays, loops, events, DOM updates, and string handling.
 
+**Live Preview**
+<br>https://kaito24mako.github.io/Utility-App/
+
 **Skills I learned:**
 - Light Switch tool: 
 <br>Changing css style based on an event listener.
