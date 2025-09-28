@@ -117,9 +117,6 @@ body {
     margin-top: 20px;
     gap: 20px;
 }
-.quote-generator .result-container {
-    display: flex;
-}
 
 /* Tabs */
 .counter, .calculator {
