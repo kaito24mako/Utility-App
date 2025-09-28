@@ -72,6 +72,8 @@ resetButton.addEventListener("click", () => {
 
 // Quote Generator - Tab Content 
 
+const quoteButton = document.querySelector("#getQuote");
+const outputQuote = document.querySelector("#outputQuote");
 const quoteList = [
     "For those to whom much is given, much is required - the Bible",
     "Speak softly and carry a big stick - T. Roosevelt",
@@ -80,15 +82,12 @@ const quoteList = [
     "Do what you can, with what you have, where you are - T. Roosevelt"
 ]
 
-const quoteButton = document.querySelector("#getQuote");
-const outputQuote = document.querySelector("#outputQuote");
-
-function getRandomQuote() {
-    for (let i = 0; i < quoteList.length; i++) {
+quoteButton.addEventListener("click", () => {
+    if (quoteList.length > 0) {
         let randomIndex = Math.floor(Math.random() * quoteList.length);
-        outputQuote.textContent = quoteList[randomIndex];
+        let removedQuote = quoteList.splice(randomIndex, 1);
+        outputQuote.textContent = removedQuote;
+    } else {
+        outputQuote.textContent = "No more quotes left. Sorry!"
     }
-}
-
-quoteButton.addEventListener("click", getRandomQuote);
-
+});
