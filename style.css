@@ -100,13 +100,13 @@ body {
 #firstNumberBox, #secondNumberBox {
     width: 40px;
 }
-.calculator-keys button {
-    width: 30px;
-    height: 30px;
-}
 .calculator-keys {
     width: 70px;
     text-align: center;
+}
+.calculator-keys button {
+    width: 30px;
+    height: 30px;
 }
 #calculatorResult {
     font-size: 20px;

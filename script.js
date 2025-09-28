@@ -131,3 +131,17 @@ letterButton.addEventListener("click", () => {
     let string = textInput.value;
     return textOutput.textContent = string.replace(/\s+/g, "").length;
 })
+
+// Calculator
+
+const firstMathInput = document.querySelector("#firstNumberBox");
+const secondMathInput = document.querySelector("#secondNumberBox");
+const mathOutput = document.querySelector("#numberResult");
+
+const additionButton = document.querySelector("#addition");
+const subtractButton = document.querySelector("#subtract");
+const multiplyButton = document.querySelector("#multiply");
+const divideButton = document.querySelector("#divide");
+const equalButton = document.querySelector("#equal");
+const clearButton = document.querySelector("#clear");
+
