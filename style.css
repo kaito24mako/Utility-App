@@ -97,7 +97,7 @@ body {
     margin: 20px;
     gap: 10px;
 }
-#firstNumberBox, #secondNumberBox {
+#firstMathBox, #secondMathBox {
     width: 40px;
 }
 .calculator-keys {
@@ -108,7 +108,7 @@ body {
     width: 30px;
     height: 30px;
 }
-#calculatorResult {
+#mathResult {
     font-size: 20px;
 }
 
@@ -135,7 +135,7 @@ body {
 }
 
 /* Tabs */
-.counter, .quote-generator, .word-tool {
+.counter, .calculator, .quote-generator, .word-tool {
     display: none;  /* hidden by default */
 }
 .active-tab {

@@ -82,6 +82,40 @@ resetButton.addEventListener("click", () => {
     counterTool("reset");
 });
 
+// Calculator
+
+const firstMathInput = document.querySelector("#firstMathBox");
+const secondMathInput = document.querySelector("#secondMathBox");
+const mathOutput = document.querySelector("#mathResult");
+
+const additionButton = document.querySelector("#addition");
+const subtractButton = document.querySelector("#subtract");
+const multiplyButton = document.querySelector("#multiply");
+const divideButton = document.querySelector("#divide");
+const exponentButton = document.querySelector("#exponent");
+const clearButton = document.querySelector("#clear");
+
+additionButton.addEventListener("click", () => {
+    mathOutput.textContent = Number(firstMathInput.value) + Number(secondMathInput.value);
+})
+subtractButton.addEventListener("click", () => {
+    mathOutput.textContent = Number(firstMathInput.value) - Number(secondMathInput.value);
+})
+multiplyButton.addEventListener("click", () => {
+    mathOutput.textContent = Number(firstMathInput.value) * Number(secondMathInput.value);
+})
+divideButton.addEventListener("click", () => {
+    mathOutput.textContent = Number(firstMathInput.value) / Number(secondMathInput.value);
+})
+exponentButton.addEventListener("click", () => {
+    mathOutput.textContent = Number(firstMathInput.value) % Number(secondMathInput.value);
+})
+clearButton.addEventListener("click", () => {
+    firstMathInput.value = "";
+    secondMathInput.value = "";
+    mathOutput.textContent = "";
+})
+
 // Quote Generator 
 
 const quoteButton = document.querySelector("#getQuote");
@@ -131,17 +165,3 @@ letterButton.addEventListener("click", () => {
     let string = textInput.value;
     return textOutput.textContent = string.replace(/\s+/g, "").length;
 })
-
-// Calculator
-
-const firstMathInput = document.querySelector("#firstNumberBox");
-const secondMathInput = document.querySelector("#secondNumberBox");
-const mathOutput = document.querySelector("#numberResult");
-
-const additionButton = document.querySelector("#addition");
-const subtractButton = document.querySelector("#subtract");
-const multiplyButton = document.querySelector("#multiply");
-const divideButton = document.querySelector("#divide");
-const equalButton = document.querySelector("#equal");
-const clearButton = document.querySelector("#clear");
-
