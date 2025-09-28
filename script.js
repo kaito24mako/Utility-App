@@ -21,7 +21,6 @@ calculatorTab.addEventListener("click", () => {
     showTab(calculatorContent);
 })
 
-
 // Light switch
 
 const lightButton = document.querySelector("#light");
