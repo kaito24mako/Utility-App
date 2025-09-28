@@ -2,16 +2,19 @@
 const counterTab = document.querySelector("#counterTab");
 const calculatorTab = document.querySelector("#calculatorTab");
 const quoteTab = document.querySelector("#quoteTab");
+const wordTab = document.querySelector("#wordTab");
 
 const counterContent = document.querySelector(".counter");
 const calculatorContent = document.querySelector(".calculator");
 const quoteContent = document.querySelector(".quote-generator");
+const wordContent = document.querySelector(".word-tool");
 
 function showTab(content) {
     // hide everything
     counterContent.classList.remove("active-tab");
     calculatorContent.classList.remove("active-tab");
     quoteContent.classList.remove("active-tab");
+    wordContent.classList.remove("active-tab");
 
     // show the tab content we want
     content.classList.add("active-tab");
@@ -25,6 +28,9 @@ calculatorTab.addEventListener("click", () => {
 })
 quoteTab.addEventListener("click", () => {
     showTab(quoteContent);
+})
+wordTab.addEventListener("click", () => {
+    showTab(wordContent);
 })
 
 // Light switch
@@ -87,7 +93,7 @@ const quoteList = [
     "The truth will set you free - the Bible",
     "Whatever you are, be a good one - A. Lincoln",
     "Do what you can, with what you have, where you are - T. Roosevelt"
-]
+];
 
 quoteButton.addEventListener("click", () => {
     if (quoteList.length > 0) {
@@ -112,7 +118,7 @@ textInput.addEventListener("keyup", () => {
 })
 
 reverseButton.addEventListener("click", () => {
-    let string = textOutput.textContent;
+    let string = textInput.value;
     return textOutput.textContent = string.split("").reverse().join("");
 })
 

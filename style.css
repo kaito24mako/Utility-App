@@ -132,7 +132,7 @@ body {
 }
 
 /* Tabs */
-.counter, .calculator, .quote-generator {
+.counter, .calculator, .quote-generator, .word-tool {
     display: none;  /* hidden by default */
 }
 .active-tab {
