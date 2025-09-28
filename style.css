@@ -94,19 +94,22 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10px;
+    margin: 20px;
     gap: 10px;
 }
-.display {
-    width: 120px;
+#firstNumberBox, #secondNumberBox {
+    width: 40px;
 }
 .calculator-keys button {
     width: 30px;
     height: 30px;
 }
 .calculator-keys {
-    width: 130px;
+    width: 70px;
     text-align: center;
+}
+#calculatorResult {
+    font-size: 20px;
 }
 
 /* Quote Generator */
@@ -132,7 +135,7 @@ body {
 }
 
 /* Tabs */
-.counter, .calculator, .quote-generator, .word-tool {
+.counter, .quote-generator, .word-tool {
     display: none;  /* hidden by default */
 }
 .active-tab {
