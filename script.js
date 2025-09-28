@@ -83,6 +83,12 @@ const quoteList = [
 const quoteButton = document.querySelector("#getQuote");
 const outputQuote = document.querySelector("#outputQuote");
 
-quoteButton.addEventListener("click", () => {
-    outputQuote.textContent = quoteList;
-})
+function getRandomQuote() {
+    for (let i = 0; i < quoteList.length; i++) {
+        let randomIndex = Math.floor(Math.random() * quoteList.length);
+        outputQuote.textContent = quoteList[randomIndex];
+    }
+}
+
+quoteButton.addEventListener("click", getRandomQuote);
+
