@@ -20,5 +20,5 @@ This is a personal project to hone my JavaScript skills.
 <br>Create active-tab class for tab content that you want to show, in CSS and JS.
 <br>Use event listeners to only show the relevant active-tab.
 
-<br>Credit to:
-<li><a href="https://www.flaticon.com/free-icons/idea" title="idea icons">Idea icons created by Good Ware - Flaticon</a>
+**Credit to:**
+- <a href="https://www.flaticon.com/free-icons/idea" title="idea icons">Idea icons created by Good Ware - Flaticon</a>
