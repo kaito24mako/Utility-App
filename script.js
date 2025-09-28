@@ -36,7 +36,7 @@ darkButton.addEventListener("click", () => {
     document.body.style.color = "white";
 })
 
-// Counter tool 
+// Counter - Tab Content
 
 const increaseButton = document.querySelector("#increaseBtn");
 const decreaseButton = document.querySelector("#decreaseBtn");
@@ -69,3 +69,6 @@ decreaseButton.addEventListener("click", () => {
 resetButton.addEventListener("click", () => {
     counterTool("reset");
 });
+
+// Quote Generator - Tab Content 
+

@@ -100,17 +100,20 @@ body {
 .display {
     width: 120px;
 }
-.calculator-buttons button {
+.calculator-keys button {
     width: 30px;
     height: 30px;
 }
-.calculator-buttons {
+.calculator-keys {
     width: 130px;
     text-align: center;
 }
 
+/* Quote Generator - Tab Content */
+
+
 /* Tabs */
-.counter {
+.counter, .calculator {
     display: none;  /* hidden by default */
 }
 .active-tab {
