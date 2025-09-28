@@ -37,15 +37,18 @@ wordTab.addEventListener("click", () => {
 
 const lightButton = document.querySelector("#light");
 const darkButton = document.querySelector("#dark");
+const tabContent = document.querySelector(".tab-content");
 
 lightButton.addEventListener("click", () => {
     document.body.style.backgroundColor = "white";
     document.body.style.color = "black";
+    tabContent.style.border = "black solid 1px";
 })
 
 darkButton.addEventListener("click", () => {
     document.body.style.backgroundColor = "black";
     document.body.style.color = "white";
+    tabContent.style.border = "white solid 1px";
 })
 
 // Counter

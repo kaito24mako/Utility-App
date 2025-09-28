@@ -5,7 +5,6 @@ html {
 * {
     margin: 0;
     padding: 0;
-    /* border: 1px solid rgba(0, 0, 0, 0.212); */
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -25,10 +24,11 @@ body {
     gap: 10px;
 }
 #main-text {
-    font-size: 25px;
+    font-size: 23px;
 }
 #sub-text {
     font-size: 15px;
+    font-style: italic;
 }
 
 /* Switch */
@@ -61,8 +61,9 @@ body {
 }
 .tab-content {
     border: 1px solid black;
-    width: 500px;
+    width: 310px;
     height: 200px;
+    border-radius: 10px;
 }
 
 /* Footer */
@@ -120,6 +121,10 @@ body {
     margin-top: 20px;
     gap: 20px;
 }
+#outputQuote {
+    text-align: center;
+    flex-wrap: wrap;
+}
 
 /* Word Tool */
 .word-tool {
@@ -136,8 +141,8 @@ body {
 
 /* Tabs */
 .counter, .calculator, .quote-generator, .word-tool {
-    display: none;  /* hidden by default */
+    display: none;  
 }
 .active-tab {
-    display: flex;  /* only the active tab shows */
+    display: flex;  
 }
